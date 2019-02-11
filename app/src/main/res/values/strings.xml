@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">IMMApp</string>
+    <string name="incident_prompt">Choose Incident</string>
+    <string-array name="type_arrays">
+        <item>Observation</item>
+        <item>Housekeeping</item>
+        <item>NearMiss</item>
+        <item>At risk behaviour</item>
+        <item>Unsafe Condition</item>
+        <item>Property damaged</item>
+
+    </string-array>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
+

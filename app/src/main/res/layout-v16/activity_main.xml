@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="Record Incident "
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/inputround"
+            android:hint="Enter_name"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/Date"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/Name"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:hint="Date"
+            android:padding="5dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="51dp"
+            android:layout_below="@+id/Name"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/white"
+            android:hint="Time"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Description"
+            android:layout_width="372dp"
+            android:layout_height="74dp"
+            android:layout_below="@+id/Name"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/inputround"
+            android:hint="Enter_description"
+            android:inputType="textMultiLine|textCapSentences"
+            android:padding="5dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/Description"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="Select Incident class below"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="italic|bold" />
+
+        <Spinner
+            android:id="@+id/IncidentClass"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/Description"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/inputround"
+            android:entries="@array/type_arrays"
+            android:prompt="@string/incident_prompt"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/pick_location"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/IncidentClass"
+            android:layout_marginTop="7dp"
+            android:text="Click to pick GPS location/TYPE"
+            android:textAllCaps="false"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/Locations"
+            android:layout_width="379dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/IncidentClass"
+            android:layout_marginTop="49dp"
+            android:background="@drawable/inputround"
+            android:hint="Your location"
+            android:padding="5dp"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="155dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/IncidentClass"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="121dp"
+            android:layout_marginRight="19dp"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+        <Button
+            android:id="@+id/btnList_incident"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Locations"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/roundpasswd"
+            android:text="View Incidence"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnSub"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/btnList_incident"
+            android:background="@drawable/roundesigninl"
+            android:text="Submit" />
+
+
+    </RelativeLayout>
+
+    </ScrollView>

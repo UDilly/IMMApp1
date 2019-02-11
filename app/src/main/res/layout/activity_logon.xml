@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+  	<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="380dp"
+  	android:layout_height="495dp"
+	android:background="@color/colorPrimaryDark"
+  	xmlns:tools="http://schemas.android.com/tools"
+	tools:layout_editor_absoluteX="8dp"
+  	tools:layout_editor_absoluteY="8dp"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<TextView
+		android:id="@+id/tSignUP"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginStart="13dp"
+		android:layout_marginLeft="13dp"
+		android:layout_marginTop="18dp"
+		android:text="Welcome! Sign In!....."
+		android:textColor="@android:color/white"
+		android:textSize="25sp"
+		android:layout_alignParentLeft="true" />
+		<EditText
+		android:id="@+id/Email"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/imageView2"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="150dp"
+		android:background="@drawable/roundemail"
+		android:ems="10"
+		android:paddingLeft="10dp"
+		android:drawablePadding="5dp"
+		android:drawableLeft="@android:drawable/sym_action_email"
+		android:hint="Email ID"
+		android:inputType="textPersonName" />
+
+    	<EditText
+    	android:id="@+id/Password"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignEnd="@+id/Email"
+    	android:layout_alignRight="@+id/Email"
+    	android:layout_centerVertical="true"
+    	android:ems="10"
+		android:drawableLeft="@android:drawable/ic_partial_secure"
+		android:background="@drawable/roundpasswd"
+		android:drawablePadding="5dp"
+		android:paddingLeft="10dp"
+    	android:inputType="textPassword"
+    	android:text="password" />
+
+    	<Button
+    	android:id="@+id/buttonSignIn"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignLeft="@+id/Password"
+        android:layout_alignStart="@+id/Password"
+    	android:layout_below="@+id/Password"
+    	android:layout_marginTop="52dp"
+    	android:background="@drawable/roundesigninl"
+    	android:onClick="SignIN"
+    	android:text="Sign In" />
+
+    	<Button
+    	android:id="@+id/buttonSignUp"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignEnd="@+id/Password"
+    	android:layout_alignRight="@+id/Password"
+    	android:layout_alignTop="@+id/buttonSignIn"
+    	android:backgroundTint="@color/red"
+		android:background="@drawable/roundemail"
+    	android:onClick="SignUP"
+    	android:text="Sign Up" />
+
+
+
+
+	</RelativeLayout>

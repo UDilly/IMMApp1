@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+   >
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:hint="Enter_name"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/Date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Name"
+        android:text="Date"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/Description"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Enter_description"
+        android:inputType="textMultiLine|textCapSentences"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/IncidentClass"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/Description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:entries="@array/type_arrays"
+        android:prompt="@string/incident_prompt"
+        android:textSize="15sp" />
+    
+    <Button
+        android:id="@+id/pick_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IncidentClass"
+        android:layout_marginTop="15dp"
+        android:text="Click to pick location"/>
+
+    <TextView
+        android:id="@+id/Locations"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_below="@+id/pick_location"
+        android:hint="Tap to pick GPS Location"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="201dp"
+        android:layout_height="136dp"
+        android:layout_below="@+id/Locations"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="34dp"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Locations"
+        android:layout_marginTop="40dp"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/Cancel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpdate"
+        android:text="Cancel"/>
+
+    </RelativeLayout>

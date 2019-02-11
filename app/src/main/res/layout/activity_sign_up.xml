@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout android:layout_width="380dp"
+    android:layout_height="495dp"
+    xmlns:tools="http://schemas.android.com/tools"
+   	tools:layout_editor_absoluteX="8dp"
+   	tools:layout_editor_absoluteY="8dp"
+	android:background="@color/colorPrimaryDark"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/tSignUP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="18dp"
+            android:text="Register Now!"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:layout_alignParentLeft="true" />
+
+    	<EditText
+    	android:id="@+id/tFirstName"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/tSignUP"
+    	android:layout_centerHorizontal="true"
+    	android:layout_marginTop="26dp"
+    	android:ems="10"
+        android:paddingLeft="10dp"
+		android:background="@drawable/roundemail"
+    	android:inputType="textPersonName"
+    	android:hint="First Name" />
+
+    	<EditText
+    	android:id="@+id/tPassword"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:ems="10"
+    	android:inputType="textPassword"
+    	android:text="password"
+        android:drawablePadding="5dp"
+		android:background="@drawable/roundemail"
+        android:drawableLeft="@android:drawable/ic_partial_secure"
+    	android:layout_below="@+id/tEmail"
+    	android:layout_alignLeft="@+id/tEmail"
+    	android:layout_alignStart="@+id/tEmail"
+    	android:layout_marginTop="23dp" />
+
+    	<EditText
+    	android:id="@+id/tLastName"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignLeft="@+id/tFirstName"
+    	android:layout_alignStart="@+id/tFirstName"
+    	android:layout_below="@+id/tFirstName"
+    	android:layout_marginTop="14dp"
+    	android:ems="10"
+        android:paddingLeft="10dp"
+        android:background="@drawable/roundemail"
+    	android:inputType="textPersonName"
+    	android:hint="Last Name" />
+
+    	<EditText
+    	android:id="@+id/tEmail"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignEnd="@+id/tLastName"
+    	android:layout_alignRight="@+id/tLastName"
+    	android:layout_below="@+id/tLastName"
+    	android:layout_marginTop="25dp"
+    	android:ems="10"
+        android:drawablePadding="5dp"
+		android:background="@drawable/roundemail"
+        android:drawableLeft="@android:drawable/sym_action_email"
+    	android:inputType="textPersonName"
+    	android:hint="Email ID" />
+
+    	<Button
+    	android:id="@+id/buttonOK"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignEnd="@+id/tPassword"
+    	android:layout_alignRight="@+id/tPassword"
+    	android:layout_below="@+id/tPassword"
+    	android:layout_marginTop="47dp"
+        android:background="@drawable/roundesigninl"
+    	android:onClick="OK"
+    	android:text="OK" />
+    	</RelativeLayout>
